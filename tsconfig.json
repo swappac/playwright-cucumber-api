@@ -13,5 +13,5 @@
     "rootDir": ".",
     "types": ["node", "@cucumber/cucumber", "@playwright/test"]
   },
-  "include": ["features/**/*.ts"]
+  "include": ["api/**/*.ts"]
 }
