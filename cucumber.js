@@ -1,6 +1,6 @@
 module.exports = {
   default: {
-    require: ['features/**/*.ts'],
+    require: ['api/**/*.ts'],
     requireModule: ['ts-node/register'],
     format: [
       'progress',
@@ -12,7 +12,7 @@ module.exports = {
     formatOptions: {
       snippetInterface: 'async-await'
     },
-    paths: ['features/**/*.feature'],
+    paths: ['api/**/*.feature'],
     publishQuiet: true,
   },
 };
