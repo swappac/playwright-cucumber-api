@@ -1,0 +1,16 @@
+{
+  "cucumberautocomplete.steps": ["api/steps/*.ts"],
+  "cucumberautocomplete.syncfeatures": "api/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.customParameters": [],
+  "cucumberautocomplete.pages": {},
+  "cucumberautocomplete.formatConfOverride": {
+    "And": 3,
+    "But": 3
+  },
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  }
+}

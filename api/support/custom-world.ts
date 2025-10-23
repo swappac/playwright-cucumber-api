@@ -1,9 +1,11 @@
-import {   setWorldConstructor} from '@cucumber/cucumber';
-import type { APIRequestContext } from '@playwright/test';  
+import { setWorldConstructor } from '@cucumber/cucumber';
+import type { APIRequestContext, APIResponse } from '@playwright/test';
+
 class CustomWorld {
   baseUrl = '';
-  request?: any;
-  response?: any;
+  request?: APIRequestContext;
+  response?: APIResponse;
   responseBody?: any;
 }
+
 setWorldConstructor(CustomWorld);

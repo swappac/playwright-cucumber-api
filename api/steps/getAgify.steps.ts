@@ -24,14 +24,16 @@ When(
 );
 
 When(
-  'I request user age with names {string}, {string}, {string}',
-  async function (name1: string, name2: string, name3: string) {
+  'I request user age for multiple names',
+  async function () {
+    //Read names from external JSON file
+    const names = readNames();
     const response = await this.request.get(
-      `${this.baseUrl}?name[]=${name1}&name[]=${name2}&name[]=${name3}`,
+      `${this.baseUrl}?name[]=${names[0]}&name[]=${names[1]}&name[]=${names[2]}`,
     );
     this.response = response;
     this.responseBody = await response.json();
-  },
+  }
 );
 
 When('I request user age without name', async function () {
@@ -93,3 +95,12 @@ Then('the response headers should be content-type {string}', async function (con
   expect(headers['content-type']).toBe(contentType);
 });
            
+function readNames() {
+  const fs = require('fs');
+  const path = require('path');
+  const namesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/names.json'), 'utf-8'));
+  // The JSON is an array of name objects
+  const names = namesData.map((n: { name: string }) => n.name);
+  return names;
+}
+

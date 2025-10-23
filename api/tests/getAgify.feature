@@ -15,7 +15,7 @@ Scenario: get user age by name and country id
 
 Scenario: get user age for a list of names
     Given base url is set
-    When I request user age with names "Alice", "Bob", "Charlie" 
+    When I request user age for multiple names
     Then the api response with status code 200
     And the response should contain age and count fields for each name
 
