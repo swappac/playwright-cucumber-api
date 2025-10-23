@@ -1,0 +1,244 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "agify-api-to-get-age-of-a-person;get-user-age-by-name",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "get user age by name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16094000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "base url is set",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 525599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I request user age with name \"Swapna\"",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 759838800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the api response with status code 200",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2191499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should contain age and count fields",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3889899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2791099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-to-get-age-of-a-person;get-user-age-by-name-and-country-id",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "get user age by name and country id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1641999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "base url is set",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I request user age with name \"Michael\" and country id \"US\"",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181272600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the api response with status code 200",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 971499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should contain age and count fields",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2186599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1880000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-to-get-age-of-a-person;get-user-age-for-a-list-of-names",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "get user age for a list of names",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1685200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "base url is set",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I request user age with names \"Alice\", \"Bob\", \"Charlie\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the api response with status code 200",
+            "match": {
+              "location": "features\\steps\\getAge.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response should contain age and count fields for each name",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1613999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "agify-api-to-get-age-of-a-person",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Agify api to get age of a person",
+    "tags": [],
+    "uri": "features\\tests\\getAgify.feature"
+  }
+]
