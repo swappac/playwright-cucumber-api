@@ -15,11 +15,11 @@ const config: PlaywrightTestConfig = {
   },
   
   // Other Playwright configurations
-  testDir: './features',
+  testDir: './api',
   timeout: 30000,
   reporter: [
     ['html'],
-    ['json', { outputFile: 'reports/test-results.json' }]
+    ['json', { outputFile: 'reports/report.json' }]
   ],
 };
 
